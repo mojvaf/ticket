@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>take a seat</title>
+</head>
+<body>
+    <div class="ticket-container">
+        <label>Price of the ticket</label>
+        <select id="price">
+            <option value="300">First class ($300)</option>
+            <option value="150">Economy ($150)</option>
+        </select>
+    </div>
+
+    <ul class="showcase">
+        <li>
+            <div class="seat "></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+    <div class="container">
+      <div class="row">  
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat "></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat "></div>  
+        
+      </div>
+      <div class="row">  
+        <div class="seat occupied "></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat occupied "></div>
+        <div class="seat occupied"></div>  
+        
+      </div>
+      <div class="row">  
+        <div class="seat  "></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat  "></div>
+        <div class="seat "></div>  
+        
+      </div>
+      <div class="row">  
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>  
+        
+      </div>
+    </div>
+
+    <p class="text">You have selected <span id="count">0</span>seats for a price of <span id="total">$0</span></p>
+    <p class="text">Please select your food</p>
+    <button id="toggle" class="toggle">
+        <i class="fa fa-utensils fa-2x"></i>
+    </button>
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <p>close</p>
+            </div>
+            <div class="modal-content">
+                <p>kdkd</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                    </div>
+                    <div>
+                        <label>last</label>
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

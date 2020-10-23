@@ -2,6 +2,11 @@ const container = document.querySelector('.container');
 const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document .getElementById('count')
 const total = document.getElementById('total')
+const close = document.getElementById('close')
+const modal = document.getElementById('modal')
+const open = document.getElementById('open')
+
+
 const ticketSelect = document.getElementById('price')
 
 let ticketPrice = +ticketSelect.value
@@ -34,3 +39,13 @@ container.addEventListener('click', (e)=>{
     }
     updateSelectedCount();
 })
+
+
+
+// show modal 
+ open.addEventListener('click', () => modal.classList.add('show-modal'))
+
+ //Hide modal
+ close.addEventListener('click', ()=>modal.classList.remove('show-modal'))
+
+ 

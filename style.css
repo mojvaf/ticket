@@ -130,6 +130,9 @@ p.text span {
   text-align: center;
 }
 
+.modal-content {
+  margin-left: 20px;
+}
 .close-btn {
   background: transparent;
   border: none;

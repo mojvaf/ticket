@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #242333;
+  background: url("cabin.jpg");
+  background-size: cover;
   color: #fff;
   display: flex;
   font-family: "Krona One", sans-serif;
@@ -13,10 +14,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0;
+  margin: 20px;
 }
 
 .ticket-container {
+  top: 320px;
   margin: 20px 0;
 }
 
@@ -72,7 +74,7 @@ body {
 }
 #span {
   float: right;
-  margin-right: 12px;
+  margin-right: 22px;
 }
 .showcase li {
   display: flex;
@@ -112,7 +114,7 @@ p.text span {
   display: block;
 }
 .modal {
-  background-color: #30336b;
+  background-color: #242333;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -131,6 +133,7 @@ p.text span {
 .close-btn {
   background: transparent;
   border: none;
+  color: green;
   font-size: 15px;
   position: absolute;
   top: 0;
